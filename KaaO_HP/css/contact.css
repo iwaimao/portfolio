@@ -1,0 +1,188 @@
+.contact-wrapper{
+    padding-top:150px;
+    width:900px;
+    margin:0 auto;
+    height:850px;
+    /* text-align: center; */
+}
+.contact-wrapper h1{
+    font-size: 2em;
+    display: block;
+}
+.content-title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact_form .input_item dl {
+    margin: 0 0 20px 0;
+    width: 820px;
+}
+dl{
+    padding: 35px 0;
+}
+
+#contact_form .input_item dl dt {
+    float: left;
+    width: 250px;
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+    padding: 3px 0 3px 0;
+    text-indent: -48px;
+    margin: 0 0 0 48px;
+}
+
+#contact_form .input_item dl dt span {
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    display: inline;
+    line-height: 20px;
+    padding: 3px 10px;
+    color: #ffffff;
+    height: 18px;
+    border-radius: 4px;
+}
+
+#contact_form .input_item dl dt span.req {
+    color:red;
+    border:solid 1px red;
+}
+#contact_form .input_item dl dt span.any{
+    color:gray;
+    border:none;
+}
+.box{
+    box-sizing: content-box; 
+} 
+
+#contact_form .input_item dl dd {
+    float: right;
+    width: 482px;
+    font-size: 18px;
+    line-height:30px;
+    height:auto;
+}
+
+#contact_form .input_item dl dd li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    line-height: 30px;
+    height: 30px;
+    padding: 3px 0;
+}
+
+#contact_form .input_item dl dd p.mail_caution {
+    font-size: 12px;
+    line-height: 19px;
+    color: #313131;
+    margin: 5px 0 0 0;
+}
+
+#contact_form .input_item dl dd input[type="text"],
+#contact_form .input_item dl dd input[type="number"],
+#contact_form .input_item dl dd input[type="mailaddress"],
+#contact_form .input_item dl dd input[type="tel"],
+#contact_form .input_item dl dd select{
+    width: 545px;
+    font-size: 18px;
+    height:30px;
+    padding: 3px 0 3px 10px;
+    margin:0;
+}
+
+input,
+select,
+textarea{
+    /* border: solid 2px black; */
+    /* border-left: solid 5px black; */
+    border:solid 1px;
+    border-left: solid 5px black;
+}
+
+#contact_form .input_item dl dd input[type="text"].inp_error,
+#contact_form .input_item dl dd input[type="number"].inp_error,
+#contact_form .input_item dl dd input[type="tel"].inp_error,
+#contact_form .input_item dl dd textarea.inp_error {
+    border: 1px solid #F88A8A;
+    background: #F4D4D4;
+}
+
+#contact_form .input_item dl dd textarea{ 
+    width: 540px;
+    padding: 10px 3px 10px 10px;
+}
+
+#energy_contact #send_status{
+    padding: 5px 0 25px;
+    text-align: center;
+}
+
+#energy_contact #send_status p{
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 25px;
+    border: 1px solid #3c763d;
+    border-radius: 4px;
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+span.error_m {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FF4040;
+    display: block;
+    margin: 0;
+}
+.transmission{
+    text-align: center;
+    /*padding-left: 180px;*/
+    margin:0 auto;
+}
+.transmission input[type="submit"] {
+    line-height: 0;
+    vertical-align: center;
+    border: 2px solid black;
+    font-size: 25px;
+    text-shadow: none;
+    color: black;
+    background-color: white;
+    width: 900px;
+    height:50px;
+    padding: 30px 0;
+    margin: 25px 0;
+    display: block;
+    opacity: 1.0;
+    cursor: pointer;
+    /* -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s; */
+    margin: 220px auto 15px auto;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    
+}
+.transmission input[type="submit"]:hover {
+    background: #333;
+    color:#fff;
+    /* -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s; */
+}
+.result-error{
+    display: inline-block;
+    margin-top: 10px;
+}
+.note_text{
+    font-size: 14px;
+    text-indent: 12px;
+}
+body{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}

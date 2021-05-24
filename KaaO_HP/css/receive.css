@@ -1,0 +1,20 @@
+.text{
+    min-height:30px;
+    line-height:30px;
+    font-size:18px;
+    border:solid 1px black;
+    border-left:solid 5px black;
+    width:545px;
+    padding:3px 0 3px 10px;
+    white-space: pre-wrap;
+}
+.test{
+    /* height:200px; */
+    margin-bottom:30px;
+    min-height: 170px;
+    font-size: 14px;
+    font-weight:bold;
+}
+#contact_form .input_item dl dt{
+    text-indent: 0px;
+}
