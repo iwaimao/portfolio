@@ -1,0 +1,49 @@
+@charset "Shift_JIS";
+
+.result_chart{
+    margin-top:30px;
+    height:600px;
+    background:white;
+    padding:10px 0 10px 10px;
+    margin:0 0 0 auto;
+    /* width: 600px; */
+}
+.chart{
+    background:white;
+    /* width:70%; */
+    height:400px;
+    float:right;
+}
+.bar{
+    background:white;
+    /* width:48%; */
+    height:200px;
+    float:left;
+    margin: 0 0 0 30px;
+}
+.jqplot-target{
+    width:630px;
+    height:500px;
+}
+.jqplot-series-0{
+    color:white;
+}
+@media screen and (max-width:640px) {
+
+.frame_wrapper{
+	overflow: scroll!important;
+}
+.result_chart{
+	width: 100%;	
+}
+.chart{
+	height:500px!important;
+    min-width:700px !important;
+}
+#result1_chart{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+	
+}
