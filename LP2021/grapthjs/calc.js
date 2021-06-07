@@ -1,4 +1,5 @@
-
+var number_flug = true;
+var rm_flug = true; 
 function getTickInterval(year){
 
 
@@ -99,27 +100,69 @@ var defaultLegend = {
 var defaultPointLabels = {
         show: true,
         location: 'n',
-       formatString: "%'.1f万円"
+        formatString: "%'.1f万円"
     }
+
+    function sliceMaxLength(elem, maxLength) {  
+        elem.value = elem.value.slice(0, maxLength);  
+    }  
+    function MaxLength(elem, maxLength) {  
+        elem.value = elem.value.slice(0, maxLength);  
+    }  
+    
+    // console.log(number_flug);
 
 // mao 積み立て金額の入力チェック
 function number_check(){
+    // console.log(test_flug);
+    // var number_flug = true;
     let mao_number = document.getElementById('calc1_t').value;
-    let err = document.getElementById('error_txt');
+    let err = document.getElementById('err-commentary');
     let onclick = document.getElementById('onclick');
     let mao_min_number = 100;
     let mao_max_number = 33333;
     if(mao_min_number <= mao_number && mao_number <= mao_max_number ){
+        err.style.color = 'black';
+        number_flug = true;
+        // onclick.setAttribute("onclick","calc1(); return false;");
+    }else{
+        err.style.color = 'red';
+        onclick.removeAttribute("onclick");
+        number_flug = false;
+    }
+}
+function rm_check(){
+    // console.log(number_flug);
+    let err = document.getElementById('rm_error_txt');
+    let onclick = document.getElementById('onclick');
+    let rm_value = document.getElementById('calc1_r').value;
+    // let onclick = document.getElementById('onclick');
+    // let null_check = '';
+    // console.log(onclick);
+    if(1 <= rm_value && rm_value <=99){
+        // onclick.setAttribute("onclick","calc1(); return false;");
         err.style.display = 'none';
-        console.log(onclick);
-        onclick.setAttribute("onclick","calc1(); return false;");
+        rm_flug = true;
     }else{
         err.style.display = 'block';
         onclick.removeAttribute("onclick");
+        rm_flug = false;
     }
 }
-// let check_flug = false;
-//最終積み立て金額を計算する
+
+function flug_check(){
+    console.log(number_flug+':number');
+    console.log(rm_flug+';rm');
+    let onclick = document.getElementById('onclick');
+    if(number_flug === true && rm_flug === true){
+        onclick.setAttribute("onclick","calc1(); return false;");
+    }else{
+        onclick.removeAttribute("onclick");
+        // alert("false");
+    }
+}
+
+
 function calc1() {
 
     // mao * 10000 → 削除
